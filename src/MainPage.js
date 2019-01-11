@@ -4,6 +4,17 @@ import './App.css';
 
 class MainPage extends Component {
 
+  w3_open = ()=> {
+  document.getElementById("my-sidebar").style.width = "100%";
+  document.getElementById("my-sidebar").style.display = "block";
+  document.getElementById("my-sidebar").style.marginTop = "0px";
+
+  }
+  w3_close = ()=> {
+      document.getElementById("my-sidebar").style.marginTop = "-400px";
+
+  }
+
   render() {
 
     return(
@@ -33,6 +44,32 @@ class MainPage extends Component {
             <div className="bar3"></div>
           </div>
         </div>
+        <div id="my-sidebar" className="my-sidebar">
+          <button onClick={this.w3_close} className="w3-button">X</button>
+            <div className="menu-items">
+              <Link to='/' tabIndex="-1">
+                <button id="w3-bar-item"
+                  className="w3-bar-item"
+                  >Home</button>
+              </Link>
+              <Link to='' tabIndex="-1">
+                <button id="w3-bar-item" className="w3-bar-item"
+                 >About Me</button>
+              </Link>
+              <Link to='' tabIndex="-1">
+                <button id="w3-bar-item" className="w3-bar-item"
+                 >Galleria</button>
+              </Link>
+              <Link to='./bookonline' tabIndex="-1">
+                <button id="w3-bar-item" className="w3-bar-item"
+                  >Book Online</button>
+              </Link>
+              <Link to='' tabIndex="-1">
+                <button id="w3-bar-item" className="w3-bar-item"
+                 >Contact Us</button>
+              </Link>
+            </div>
+      </div>
       <div className="social-logos">
         <a href="https://www.instagram.com/" target="blank" rel="noopener noreferrer" tabIndex="-1">
           <div className="instagram-logo" tabIndex="0">instagram logo</div>
