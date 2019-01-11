@@ -472,3 +472,90 @@ p {
  .article-three {
      position: relative;
  }
+ /*contact mesage section*/
+ .msg-field {
+   color: #777;
+   background-color: white;
+   text-align: center;
+   padding: 50px 81px;
+   text-align: justify;
+ }
+ .msg-title {
+   text-align: left;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   font: 20px "Lato", sans-serif;
+   color: #686868;
+ }
+ .contact-info {
+   margin-top: 30px;
+ }
+ .contact-info p{
+   margin-top: -20px;
+ }
+ .msg-section-img {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url('./img/msg-section-img.jpg');
+   min-height: 50vh;
+ }
+ .input-form {
+   width: 100%;
+   margin-top: 60px;
+ }
+ .input-field {
+   margin-top: 20px;
+ }
+ .input-user {
+   width: 98%;
+   height: 25px;
+ }
+ .input-email {
+   width: 98%;
+   height: 25px;
+ }
+ .input-subject {
+   width: 98%;
+   height: 25px;
+ }
+ .input-msg {
+   width: 98%;
+   height: 55px;
+ }
+ .input-choice {
+   width: 101%;
+   height: 30px;
+ }
+ .send-button {
+   margin-top: 5px;
+   cursor: pointer;
+   height: 30px;
+   width: 100%;
+   color: #fff;
+   border: none;
+   background-color: #686868;
+ }
+ .send-button:hover {
+   cursor: pointer;
+   color: #686868;
+   border: none;
+   background-color: #ccc;
+   transition: 0.2s;
+ }
+ .send-button:focus {
+   color: #686868;
+   outline:  none;
+   background-color: #ccc;
+   transition: 0.2s;
+ }
+/*style for 4th bg view on the main page*/
+ .last-article-title {
+  background-color: transparent;
+  color: #181818;
+  font-size: 25px;
+  letter-spacing: 10px;
+ }
+ .last-article-text p {
+  padding: 15px 60px;
+ }
