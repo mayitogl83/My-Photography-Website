@@ -377,3 +377,35 @@ p {
   outline: none;
   color: #808080;
 }
+/*style for 2nd bg view on the main page*/
+.bgimg-2 {
+    background-image: url('./img/moments.jpg');
+    min-height: 600px;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.next-border {
+  padding-top: 40px;
+  background-color: transparent;
+  font-size: 25px;
+  color: #f7f7f7;
+  padding-left: 70px;
+  padding-right: 5px;
+  letter-spacing: 5px;
+}
+.article-two {
+  position: relative;
+}
+.article-title-two {
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 22px "Lato", sans-serif;
+  color: #fff;
+}
