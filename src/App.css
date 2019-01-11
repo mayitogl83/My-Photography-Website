@@ -722,4 +722,8 @@ p {
 .divisor {
   font-size: 12px;
 }
+/*last article in bg image*/
+.last-article-text p {
+ padding: 15px 200px;
+}
 }
