@@ -322,3 +322,58 @@ body {
  cursor: pointer;
  transition: 0.2s;
 }
+/*style photographer info*/
+.personal-info {
+  margin-top: -10px;
+  position: relative;
+}
+/*img-info*/
+.personal-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./img/Zl1dnkAk.jpg');
+  min-height: 50vh;
+}
+/*text info*/
+.article-one {
+    color: #777;
+    background-color: white;
+    text-align: center;
+    padding: 50px 60px;
+    text-align: justify;
+}
+.article-title {
+    text-align: left;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 22px "Lato", sans-serif;
+    color: #686868;
+}
+.under-line {
+  width: 45px;
+  border-bottom: 1px solid #5a5a5a;
+}
+p {
+  font-size: 16px;
+}
+.book-online {
+  font-size: 18px;
+  color: #b2b2b2;
+  margin-top: 25px;
+  background-color: #fff;
+  border: none;
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.book-online:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #808080;
+}
+.book-online:focus {
+  text-decoration: underline;
+  outline: none;
+  color: #808080;
+}
