@@ -69,7 +69,28 @@ class MainPage extends Component {
                  >Contact Us</button>
               </Link>
             </div>
-      </div>
+        </div>
+        <div id="navbar-desktop" className="navbar-desktop">
+          <Link to='./' tabIndex="-1">
+            <button className="item"
+              onClick={ (event) => { this.w3_close();  }}
+              >Home</button>
+          </Link>
+          <Link to='./' tabIndex="-1">
+            <button className="item">About Me</button>
+          </Link>
+          <Link to='./' tabIndex="-1">
+            <button className="item">Galleria</button>
+          </Link>
+          <Link to='./' tabIndex="-1">
+            <button className="item">Contact Us</button>
+          </Link>
+          <div className="topnav-right">
+            <Link to='./bookonline' tabIndex="-1">
+              <button className="item">Book Online</button>
+            </Link>
+          </div>
+        </div>
       <div className="social-logos">
         <a href="https://www.instagram.com/" target="blank" rel="noopener noreferrer" tabIndex="-1">
           <div className="instagram-logo" tabIndex="0">instagram logo</div>
