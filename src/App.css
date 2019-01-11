@@ -409,3 +409,58 @@ p {
   font: 22px "Lato", sans-serif;
   color: #fff;
 }
+/*style for galleria images*/
+.article-text {
+    color: #ddd;
+    background-color: #66686a;
+    padding: 15px 11px;
+    text-align: justify;
+}
+ .column {
+   overflow: hidden;
+ }
+ .exmpl-one, .exmpl-two, .exmpl-three, .exmpl-four, .exmpl-five, .exmpl-six {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 40vh;
+ }
+ .gal-title {
+   color: #fff;
+   font-size: 25px;
+   margin-left: 18%;
+   margin-top: -50px;
+   position: absolute;
+ }
+ .exmpl-one {
+   background-image: url('./img/newborn.jpg');
+ }
+ .exmpl-two {
+   background-image: url('./img/model.jpg');
+ }
+ .exmpl-three {;
+   background-image: url('./img/couple.jpg');
+ }
+ .exmpl-four {;
+   background-image: url('./img/wedding-one.jpg');
+ }
+ .exmpl-five {;
+   background-image: url('./img/pregnancy.jpg');
+ }
+ .exmpl-six {;
+   background-image: url('./img/babies1.jpg');
+ }
+ .exmpl-two:hover, .exmpl-one:hover, .exmpl-three:hover,.exmpl-four:hover, .exmpl-five:hover,  .exmpl-six:hover {
+   cursor: pointer;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+   opacity: 0.65;
+   transform: scale(1.1);
+   transition: 0.4s;
+ }
+ .exmpl-two:focus, .exmpl-one:focus, .exmpl-three:focus,.exmpl-four:focus, .exmpl-five:focus,  .exmpl-six:focus {
+   outline: none;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+   opacity: 0.65;
+   transform: scale(1.1);
+   transition: 0.4s;
+ }
