@@ -559,3 +559,13 @@ p {
  .last-article-text p {
   padding: 15px 60px;
  }
+ /*style for desktop devices*/
+@media screen and (min-width:800px) {
+  /*hide dropdown menu on desktop device*/
+  .my-sidebar {
+    display: none!important;
+  }
+  .navbar-cell {
+    display: none;
+  }
+}
