@@ -604,4 +604,48 @@ p {
   background-color: #c0c0c0;
   outline: none;
 }
+/*style for social media in desktop devices*/
+.social-logos {
+    z-index: 1;
+    position: fixed;
+    display: block;
+    margin-top: 250px;
+    width: 80px;
+  }
+  .instagram-logo:hover, .facebook-logo:hover, .twitter-logo:hover, .pinterest-logo:hover {
+    background-size: 54px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    transition: 0.2s;
+  }
+  .instagram-logo:focus, .facebook-logo:focus, .twitter-logo:focus, .pinterest-logo:focus {
+    background-size: 54px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    transition: 0.2s;
+    outline: none;
+  }
+  .instagram-logo, .facebook-logo, .twitter-logo, .pinterest-logo {
+    margin-top: 10px;
+    display: flex;
+    width: 46px;
+    margin-left: 30px;
+    height: 46px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    font-size: 0;
+  }
+  .instagram-logo {
+    background-image: url('./img/instagram.png');
+  }
+  .facebook-logo {
+    background-image: url('./img/facebook.png');
+  }
+  .twitter-logo {
+    background-image: url('./img/twitter.png');
+  }
+  .pinterest-logo {
+    background-image: url('./img/pinterest.png');
+  }
 }
