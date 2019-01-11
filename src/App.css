@@ -701,4 +701,25 @@ p {
 .row-image {
   width: 33.3%;
 }
+/**/
+.contact-field {
+  display: flex;
+}
+.msg-field {
+  width: 45%;
+  padding: 50px 120px;
+}
+.msg-section-img {
+  min-height: 25vh;
+  width: 75%;
+}
+.send-button {
+  margin-top: 20px;
+  padding: 0;
+  float: right;
+  width: 120px;
+}
+.divisor {
+  font-size: 12px;
+}
 }
