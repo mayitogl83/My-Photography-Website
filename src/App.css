@@ -464,3 +464,11 @@ p {
    transform: scale(1.1);
    transition: 0.4s;
  }
+ /*style for 3rd bg view on the main page*/
+ .bgimg-3 {
+     background-image: url('./img/camera.jpg');
+     min-height: 400px;
+ }
+ .article-three {
+     position: relative;
+ }
