@@ -685,4 +685,20 @@ p {
 .book-online {
   font-size: 14px;
 }
+/*style for galleria image session*/
+.column {
+  overflow: hidden;
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+}
+.row::after {
+    width: 100%;
+    content: "";
+    clear: both;
+    display: table;
+}
+.row-image {
+  width: 33.3%;
+}
 }
