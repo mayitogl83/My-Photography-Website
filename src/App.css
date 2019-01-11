@@ -568,4 +568,40 @@ p {
   .navbar-cell {
     display: none;
   }
+  /*nav bar style for desktop*/
+  .navbar-desktop {
+    display: block;
+    height: 60px;
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    transition: 0.3s;
+  }
+  .item {
+    text-transform: uppercase;
+    border: 0;
+    background-color: transparent;
+    float: left;
+    display: block;
+    color: #282E34;
+    text-align: center;
+    padding: 23px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .topnav-right {
+  float: right;
+}
+.item:hover {
+  background-color: #c0c0c0;
+  transition: 0.3s;
+}
+.item:focus {
+  transition: 0.3s;
+  background-color: #c0c0c0;
+  outline: none;
+}
 }
