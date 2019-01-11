@@ -9,7 +9,30 @@ class MainPage extends Component {
     return(
 
       <div className="container">
-
+        <div role="navigation" id="navbar-cell" className="navbar-cell">
+          <div className="initial-logo-space"></div>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" tabIndex="-1">
+            <div className="instagram-logo-cell" tabIndex="0">instagram logo</div>
+          </a>
+          <div className="logo-space"></div>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" tabIndex="-1">
+            <div className="facebook-logo-cell" tabIndex="0">facebook logo</div>
+          </a>
+          <div className="logo-space"></div>
+          <a href="https://twitter.com/login" target="_blank" rel="noopener noreferrer" tabIndex="-1">
+            <div className="twitter-logo-cell" tabIndex="0">twitter logo</div>
+          </a>
+          <div className="logo-space"></div>
+          <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" tabIndex="-1">
+            <div className="pinterest-logo-cell" tabIndex="0">pinterest logo</div>
+          </a>
+          <div className="bar-menu-space"></div>
+          <div className="bar-menu-container" onKeyPress={this.w3_open} onClick={this.w3_open}  tabIndex="0">
+            <div className="bar1"></div>
+            <div className="bar2"></div>
+            <div className="bar3"></div>
+          </div>
+        </div>
       <div className="social-logos">
         <a href="https://www.instagram.com/" target="blank" rel="noopener noreferrer" tabIndex="-1">
           <div className="instagram-logo" tabIndex="0">instagram logo</div>
