@@ -656,5 +656,33 @@ p {
   .caption-top {
   top: 450px;
 }
-
+/*style for personal info*/
+.personal-info {
+  display: flex;
+}
+.personal-img-field {
+  width: 100%;
+}
+.personal-img {
+  min-height: 50vh;
+  width: 60%;
+}
+.article-one {
+  padding: 50px 150px 0px 100px;
+  width: 40%;
+}
+.article-title {
+  font-size: 18px;
+}
+.next-border {
+  font-size: 23px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+p {
+  font-size: 12px;
+}
+.book-online {
+  font-size: 14px;
+}
 }
