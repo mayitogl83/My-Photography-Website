@@ -192,3 +192,133 @@ body {
     margin: 6px 0;
     transition: 0.4s;
 }
+/*style for hide side menu*/
+.my-sidebar {
+  background-color: #36393d;
+  min-height: 35vh;
+  z-index: 1;
+  position: absolute;
+  transition: 0.4s;
+  display: block;
+  width: 100%;
+  margin-top: -395px;
+}
+.w3-button {
+  margin-top: 15px;
+  padding-right: 12%;
+  float: right;
+  background-color: #36393d;
+  color: #fff;
+  border: none;
+}
+.w3-button:hover {
+  cursor: pointer;
+  color: #ccc;
+}
+.w3-button:focus {
+  outline: none;
+  cursor: pointer;
+  color: #ccc;
+}
+.menu-items a {
+  text-decoration: none;
+}
+.w3-bar-item {
+  border: 0;
+  background-color: transparent;
+  color: #fff;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  height: 40px;
+}
+.w3-bar-item:hover, .w3-bar-item:focus {
+  outline: none;
+  cursor: pointer;
+  background-color: #ddd;
+  color: black;
+  text-decoration: none;
+  transition: 0.04s;
+}
+.item:hover {
+  cursor: pointer;
+  background-color: #ddd;
+  color: black;
+}
+/*style for 1rst bg view on the main page*/
+.caption-top {
+     position: absolute;
+     left: 0;
+     top: 48%;
+     width: 100%;
+     text-align: center;
+ }
+ .logo-container {
+   z-index: 1;
+   position: relative;
+   width: 100%;
+ }
+ .camera-logo {
+   margin-left: calc((100% - 100px) * 0.5);
+   transform: rotate(-30deg);
+   margin-top: 310px;
+   width: 150px;
+   height: 150px;
+   position: absolute;
+   background-position: center;
+   background-size: 150px;
+   background-repeat: no-repeat;
+   background-image: url('./img/camera_logo_png2.png');
+ }
+ .top-line-title {
+   margin-top: 0;
+   margin-left: calc((100% - 200px) * 0.5);
+   border-bottom: 1px solid #fff;
+   width: 200px;
+}
+ .caption-top span.title-logo {
+   font-family: raleway;
+   background-color: transparent;
+   color: #fff;
+   font-size: 35px;
+   letter-spacing: 9px;
+   padding-left: 25px;
+   padding-right: 25px;
+ }
+ .under-title-logo {
+   margin-top: 10px;
+   color: #fff;
+   letter-spacing: 15px;
+ }
+ /*Start button*/
+ .start-button {
+ margin-top: 20px;
+ font-size: 12px;
+ color: #fff;
+ background-color: transparent;
+ border: solid 1.5px white;
+ border-radius: 20px;
+ height: 30px;
+ width: 85px;
+ text-decoration: none;
+}
+.start-button:hover {
+ font-size: 13px;
+ outline: none;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+ cursor: pointer;
+ color: black;
+ background-color: #fff;
+ transition: 0.2s;
+}
+.start-button:focus {
+ outline: none;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+ color: black;
+ background-color: #f1efef;
+ cursor: pointer;
+ transition: 0.2s;
+}
