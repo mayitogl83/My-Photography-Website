@@ -75,7 +75,12 @@ class App extends Component {
     }))
   }
 
+   refreshPage = () => {
+      window.location.reload();
+  }
+
   render() {
+
     return (
       <div className="App">
         <div id="page-content" className="content">
@@ -88,10 +93,14 @@ class App extends Component {
           <Route path='/bookonline' render={()=>(
           <BookOnline
             onBookingSession={ this.bookingSession }
-            sessions={ this.state.sessions }/>
+            sessions={ this.state.sessions }
+            />
         ) }/>
           <Route path='/bookingform' render={ ()=>(
-            <BookingForm sessions={ this.state.sessions }/>
+            <BookingForm
+              sessions={ this.state.sessions }
+              onRefresh={ this.refreshPage }
+            />
           ) }/>
         </div>
       </div>
