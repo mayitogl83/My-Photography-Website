@@ -1001,4 +1001,52 @@ p {
 .long-line {
   display: none;
 }
+/*booking form style for desktop devices*/
+form {
+  width: 100%;
+  display: flex;
+}
+.calendar {
+  max-width: 90%;
+}
+.calendar input {
+  margin-top: 5px;
+  font-size: 12px;
+  width:100%;
+}
+.calendar .input-form {
+  margin-left: 10%;
+  width: 35%;
+}
+.calendar .input {
+  overflow: hidden;
+  padding: 20px;
+  outline: 1px solid #ccc;
+  margin: 40px 80px 80px 80px;
+  height: 325px;
+  width: 35%;
+}
+.title-form {
+  font-size: 15px;
+}
+.input .session-title {
+  margin-top: 0px;
+  font-size: 20px;
+}
+.input .session-description {
+  height: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
+  position: inherit;
+  z-index: 1;
+  overflow-y: scroll;
+}
+.input .contact-info {
+  padding-bottom: 15px;
+  margin-top: 30px;
+}
+.input .contact-info p {
+  font-size: 10px;
+  margin-top: -10px;
+}
 }
