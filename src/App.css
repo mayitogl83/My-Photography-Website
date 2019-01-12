@@ -860,4 +860,102 @@ p {
 .last-article-text p {
  padding: 15px 200px;
 }
+/*bookonline style for desktop*/
+.bookonline-field {
+  padding-top: 0;
+  width: 100%;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+.set-appointment {
+  padding: 15px;
+  font-size: 14px;
+}
+.go-back {
+  background-size: 20px;
+}
+.bookonline-field a {
+  margin-left: 10px;
+}
+.newborn-session-img, .studio-session-img, .couple-session-img {
+  margin-left: 18px;
+  margin-top: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 25vh;
+  width: 28vw;
+}
+
+.bookonline:hover {
+  cursor: pointer;
+  opacity: 0.70;
+  transform: scale(1.03);
+  transition: 0.4s;
+  outline: none;
+}
+.bookonline:focus {
+  outline: none;
+  cursor: pointer;
+  opacity: 0.70;
+  transform: scale(1.03);
+  transition: 0.4s;
+}
+.page-title {
+  margin-top: 0;
+  font-size: 28px;
+}
+.line-title {
+  margin-top: 5px;
+  margin-left: calc((100% - 46px) * 0.5);
+  border-bottom: 1.5px solid #777;
+  width: 40px;
+}
+.session-title {
+  font-size: 20px;;
+}
+.session-info {
+  width: 31vw;
+  font-size: 14px;
+}
+.time-info {
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+.price-info {
+  margin-top: 3px;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+.session-description {
+  overflow-y: scroll;
+  height: 100px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 12px;
+}
+.book-now {
+  width: 90%;
+  margin-top: 10px;
+  font-size: 14px;
+  transition: 0.04s;
+  margin-left: 15px;
+  text-align: center;
+}
+.book-now:hover {
+  outline: none;
+  background: #36393d;
+  color: #fff;
+}
+.book-now:focus {
+  color: #36393d;
+  background-color: #ddd;
+}
+
+.long-line {
+  display: none;
+}
 }
