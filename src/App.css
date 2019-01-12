@@ -559,6 +559,140 @@ p {
  .last-article-text p {
   padding: 15px 60px;
  }
+ /*bookonline style for cellphine devices*/
+ .bookonline:hover {
+   cursor: pointer;
+ }
+ .bookonline:focus {
+   outline: none;
+ }
+ .bookonline-container {
+   margin-top: 0;
+   text-align: center;
+   padding: 0;
+   transition: 0.4s;
+ }
+ .go-back-field {
+   margin-left: 35px;
+   display: flex;
+   width: 50px;
+ }
+ .go-back {
+   width: 40px;
+   height: 40px;
+   background-image: url('./img/arrow-back.svg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 30px;
+   font-size: 0;
+   border-radius: 50%;
+   transition: 0.3s;
+ }
+ .go-back:hover, .go-back:focus {
+   outline: none;
+   cursor: pointer;
+   background-image: url('./img/arrow-back-onpointer.svg');
+   background-color: #ddd;
+   border-radius: 50%;
+ }
+ .go-back-text {
+   margin-left: 5px;
+   margin-top: 7px;
+ }
+ .set-appointment {
+  padding: 25px;
+  font-size: 17px;
+  float: left;
+  margin-left: 20px;
+}
+ .bookonline-field {
+   padding-top: 25px;
+ }
+ .bookonline-session {
+   padding: 0;
+   border: none;
+   background: #fff;
+   text-align: center;
+ }
+ .bookonline-session:focus {
+   outline: none;
+ }
+ .newborn-session-img, .studio-session-img, .couple-session-img {
+   margin-left: 15px;
+   margin-top: 50px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 40vh;
+   width: 95vw;
+ }
+ .newborn-session-img {
+   background-image: url('./img/newborn.jpg');
+ }
+ .studio-session-img {
+   background-image: url('./img/model.jpg');
+ }
+ .couple-session-img {
+   background-image: url('./img/couple.jpg');
+ }
+ .page-title {
+   letter-spacing: 3px;
+   font-size: 30px;
+   padding-top: 130px;
+ }
+ .line-title {
+   margin-top: 5px;
+   margin-left: calc((100% - 46px) * 0.5);
+   border-bottom: 1px solid #0a0a0a;
+   width: 40px;
+ }
+ .session-title {
+   font-size: 25px;
+   letter-spacing: 1px;
+ }
+ .session-info {
+   color: #484848;
+   font-size: 16px;
+   margin-top: 10px;
+ }
+ .time-info {
+   letter-spacing: 2px;
+ }
+ .price-info {
+   margin-top: 3px;
+   letter-spacing: 2px;
+ }
+ .session-description {
+   margin-left: 80px;
+   margin-right: 80px;
+   margin-top: 15px;
+   margin-bottom: 25px;
+
+   font-size: 14px;
+ }
+ .book-now {
+   margin-left: 25%;
+   margin-top: 20px;
+   font-size: 16px;
+   width: 50%;
+   height: 45px;
+   color: #fff;
+   background-color: #36393d;
+   border: none;
+   cursor: pointer;
+   transition: 0.3s;
+ }
+ .book-now:hover, .book-now:focus {
+   background: #bcbbbb;
+   color: #484848;
+ }
+ .book-now-text {
+   padding-top: 15px;
+ }
+ .long-line {
+   margin: 45px;
+   border-bottom: 1px solid #cecece;
+ }
  /*style for desktop devices*/
 @media screen and (min-width:800px) {
   /*hide dropdown menu on desktop device*/
