@@ -8,6 +8,9 @@ class BookingForm extends Component {
 
 
   render() {
+
+    const { onRefresh } = this.props
+
     return (
       <div className="schedule-container">
       <div id="form-container" className="form-container">
@@ -19,7 +22,9 @@ class BookingForm extends Component {
       <div className="calendar">
         <div className="go-back-field">
           <Link to="./bookonline">
-            <div className="go-back">arrow back</div>
+            <div className="go-back"
+              onClick={ (event) => { onRefresh(); }}
+            >arrow back</div>
           </Link>
           <div className="go-back-text">Back</div>
         </div>
