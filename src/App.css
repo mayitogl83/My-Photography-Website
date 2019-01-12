@@ -693,6 +693,50 @@ p {
    margin: 45px;
    border-bottom: 1px solid #cecece;
  }
+ /*bookingform style for cellphone devices*/
+.schedule-container {
+  margin-top: 0;
+  text-align: center;
+}
+
+.calendar {
+  padding-top: 25px!important;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px 0px 20px 10px;
+}
+.calendar .input {
+  height: 590px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-left: 9%;
+  width: 82%;
+  border: 1px solid #ccc;
+}
+.input .session-title {
+  margin-top: 15px;
+  font-size: 24px;
+}
+.title-form {
+  font-size: 18px;
+  float: left;
+  width: 100%;
+}
+.line {
+  margin-top: 15px;
+  margin-left: calc((100% - 206px) * 0.5);
+  border-bottom: 1px solid #ccc;
+  width: 200px;
+}
+.calendar input {
+  margin-top: 0px;
+  font-size: 12px;
+  width:100%;
+}
+.calendar .input-form {
+  margin-left: 9%;
+  width: 82%;
+}
  /*style for desktop devices*/
 @media screen and (min-width:800px) {
   /*hide dropdown menu on desktop device*/
@@ -954,7 +998,6 @@ p {
   color: #36393d;
   background-color: #ddd;
 }
-
 .long-line {
   display: none;
 }
