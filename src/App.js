@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import MainPage from './MainPage';
 import BookOnline from './BookOnline';
+import BookingForm from './BookingForm';
 import './App.css';
 
 class App extends Component {
@@ -68,6 +69,12 @@ class App extends Component {
     ]
   }
 
+  bookingSession = (session) => {
+    this.setState((state) => ({
+      sessions: state.sessions.filter((s) => s.id === session.id)
+    }))
+  }
+
   render() {
     return (
       <div className="App">
@@ -83,6 +90,9 @@ class App extends Component {
             onBookingSession={ this.bookingSession }
             sessions={ this.state.sessions }/>
         ) }/>
+          <Route path='/bookingform' render={ ()=>(
+            <BookingForm sessions={ this.state.sessions }/>
+          ) }/>
         </div>
       </div>
     );
