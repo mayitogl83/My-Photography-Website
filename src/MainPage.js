@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 
+
+
 class MainPage extends Component {
+
 
   w3_open = ()=> {
   document.getElementById("my-sidebar").style.width = "100%";
@@ -14,6 +17,7 @@ class MainPage extends Component {
       document.getElementById("my-sidebar").style.marginTop = "-400px";
 
   }
+
 
   render() {
 
@@ -50,22 +54,33 @@ class MainPage extends Component {
               <Link to='/' tabIndex="-1">
                 <button id="w3-bar-item"
                   className="w3-bar-item"
+                  onClick={ (event) => { this.w3_close(); }}
                   >Home</button>
               </Link>
               <Link to='' tabIndex="-1">
-                <button id="w3-bar-item" className="w3-bar-item"
-                 >About Me</button>
+                <button id="w3-bar-item"
+                  className="w3-bar-item"
+                  onClick={ () => window.scrollTo(0, 855) }
+                >About Me</button>
               </Link>
               <Link to='' tabIndex="-1">
-                <button id="w3-bar-item" className="w3-bar-item"
-                 >Galleria</button>
+                <button id="w3-bar-item"
+                  className="w3-bar-item"
+                  onClick={ () => window.scrollTo(0, 2650) }
+                >Galleria</button>
               </Link>
               <Link to='./bookonline' tabIndex="-1">
-                <button id="w3-bar-item" className="w3-bar-item"
-                  >Book Online</button>
+                <button id="w3-bar-item"
+                  className="w3-bar-item"
+                  onClick={ (event) => {
+                    this.w3_close();
+                   }}
+                >Book Online</button>
               </Link>
               <Link to='' tabIndex="-1">
-                <button id="w3-bar-item" className="w3-bar-item"
+                <button id="w3-bar-item"
+                  className="w3-bar-item"
+                  onClick={ () => window.scrollTo(0, 5320) }
                  >Contact Us</button>
               </Link>
             </div>
@@ -73,17 +88,23 @@ class MainPage extends Component {
         <div id="navbar-desktop" className="navbar-desktop">
           <Link to='./' tabIndex="-1">
             <button className="item"
-              onClick={ (event) => { this.w3_close();  }}
+              onClick={ (event) => { this.w3_close();  window.scrollTo(0, 0);}}
               >Home</button>
           </Link>
           <Link to='./' tabIndex="-1">
-            <button className="item">About Me</button>
+            <button className="item"
+              onClick={ () => window.scrollTo(0, 855) }
+            >About Me</button>
           </Link>
           <Link to='./' tabIndex="-1">
-            <button className="item">Galleria</button>
+            <button className="item"
+              onClick={ () => window.scrollTo(0, 1920) }
+            >Galleria</button>
           </Link>
           <Link to='./' tabIndex="-1">
-            <button className="item">Contact Us</button>
+            <button className="item"
+              onClick={ () => window.scrollTo(0, 3164) }
+            >Contact Us</button>
           </Link>
           <div className="topnav-right">
             <Link to='./bookonline' tabIndex="-1">
