@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import MainPage from './MainPage';
 import BookOnline from './BookOnline';
 import BookingForm from './BookingForm';
