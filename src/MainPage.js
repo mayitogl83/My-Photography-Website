@@ -295,6 +295,16 @@ class MainPage extends Component {
           </div>
           </div>
           </div>
+          <footer id="footer" className="footer">
+      <button title='Back to top' className='scroll'
+         onClick={ () => { window.scrollTo(0, 0)}} tabIndex="-1">
+          <span className='arrow-up' tabIndex="0">arrow up</span>
+        </button>
+        <div id="divisor" className="divisor">
+          <div className="back-to-top">Back to Top</div>
+          <h5 className="developer">Copyright @ 2018 Solved Code Inc. All rights reserved.</h5>
+        </div>
+      </footer>
       </div>
     )
   }
