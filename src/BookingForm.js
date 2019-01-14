@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 
-
+window.addEventListener('popstate', function(event) {
+  window.location.reload(false);
+})
 
 class BookingForm extends Component {
 
