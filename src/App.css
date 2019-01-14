@@ -738,6 +738,43 @@ p {
   margin-left: 9%;
   width: 82%;
 }
+/*footer style for cellphone devices*/
+.footer {
+  background-color: #36393d;
+  margin-top: 0px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.back-to-top {
+  margin-top: 25px;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+.arrow-up {
+  cursor: pointer;
+  margin-top: -50px;
+  display: block;
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+  font-size: 0;
+  background-image: url('./img/arrow-up.png');
+}
+.arrow-up:hover {
+  background-image: url('./img/arrow-up-hover.png');
+  transition: 0.4s;
+}
+.arrow-up:focus {
+  background-image: url('./img/arrow-up-hover.png');
+  transition: 0.4s;
+}
+.developer {
+  margin-top: 70px;
+  font-size: 14px;
+}
  /*style for desktop devices*/
 @media screen and (min-width:800px) {
   /*hide dropdown menu on desktop device*/
@@ -1509,4 +1546,8 @@ form {
   .image-gallery-play-button {
     left: 5%;
   }
+  .scroll {
+  margin-bottom: 75px;
+  border-bottom: 1px solid #ccc;
+ }
 }
