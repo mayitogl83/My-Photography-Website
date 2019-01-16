@@ -681,11 +681,11 @@ p {
    background-color: #36393d;
    border: none;
    cursor: pointer;
-   transition: 0.3s;
  }
  .book-now:hover, .book-now:focus {
    background: #bcbbbb;
    color: #484848;
+   transition: 0.3s;
  }
  .book-now-text {
    padding-top: 15px;
@@ -741,12 +741,21 @@ p {
 /*footer style for cellphone devices*/
 .footer {
   background-color: #36393d;
-  margin-top: 0px;
+  margin-top: 130px;
   text-align: center;
+}
+.footer-line {
   margin-bottom: 0px;
 }
+.divisor {
+  margin-top: -40px;
+  background-color: #36393d;
+  color: #fff;
+  padding: 35px 0 21px;
+  font-size: 18px;
+}
 .back-to-top {
-  margin-top: 25px;
+  margin-top: -10px;
   font-size: 20px;
   letter-spacing: 4px;
 }
@@ -764,6 +773,7 @@ p {
   background-image: url('./img/arrow-up.png');
 }
 .arrow-up:hover {
+  background-size: 30px;
   background-image: url('./img/arrow-up-hover.png');
   transition: 0.4s;
 }
@@ -772,8 +782,13 @@ p {
   transition: 0.4s;
 }
 .developer {
+  color: #808080;
   margin-top: 70px;
-  font-size: 14px;
+  font: 15px "Lato", sans-serif;
+}
+.scroll {
+  border: none;
+  margin-bottom: 25px;
 }
  /*style for desktop devices*/
 @media screen and (min-width:800px) {
@@ -938,10 +953,27 @@ p {
 .divisor {
   font-size: 12px;
 }
+.back-to-top {
+  font-size: 16px;
+}
+.arrow-up {
+  background-size: 20px;
+}
+.developer {
+  font: 12px "Lato", sans-serif;
+}
 /*last article in bg image*/
 .last-article-text p {
  padding: 15px 200px;
 }
+/*fotter style for desktop devices*/
+.footer {
+  margin-top: 0px;
+}
+.footer-line {
+  margin: 75px;
+  border-bottom: 1px solid #ccc;
+ }
 /*bookonline style for desktop*/
 .bookonline-field {
   padding-top: 0;
@@ -1547,7 +1579,6 @@ form {
     left: 5%;
   }
   .scroll {
-  margin-bottom: 75px;
   border-bottom: 1px solid #ccc;
  }
 }
