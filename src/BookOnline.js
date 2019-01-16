@@ -9,6 +9,8 @@ class BookOnline extends Component {
 
   render() {
 
+    const { toTop } = this.props
+
     return (
       <div className="bookonline-container">
         <div className="fade-in one">
@@ -26,14 +28,14 @@ class BookOnline extends Component {
         <div className="fade-in three">
         <div className="set-appointment">Book the Session you are looking for Now</div>
         <div className="show-session">
-          <div className="show-session-item" onClick={ (event) => { refreshPage(); this.goToAnchorCero() }}></div>
+          <div className="show-session-item" onClick={ (event) => { refreshPage(); toTop(); }}></div>
           <div className="show-session-text">Click to Show All Sessions</div>
         </div>
         <div className="bookonline-field">
           {this.props.sessions.map((session) => (
             <Link key={session.id} to="./bookingform" tabIndex="-1">
             <button className="bookonline-session" tabIndex="-1"
-              onClick={ (event) => { this.props.onBookingSession(session); }}>
+              onClick={ (event) => { this.props.onBookingSession(session); toTop(); }}>
             <div className="bookonline" tabIndex="-1">
               <div className={session.class}/>
               <div className="session-info">

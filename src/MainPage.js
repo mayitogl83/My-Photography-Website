@@ -9,6 +9,8 @@ class MainPage extends Component {
 
   render() {
 
+    const { toTop } = this.props
+
     return(
 
       <div className="container">
@@ -38,7 +40,9 @@ class MainPage extends Component {
             <div className="under-title-logo">photography</div>
             <div id="start-field" className="start-field">
               <Link to='./bookonline' tabIndex="-1">
-                <button className="start-button">Get Started</button>
+                <button className="start-button"
+                  onClick={ () => toTop()
+                }>Get Started</button>
               </Link>
             </div>
           </div>
@@ -68,7 +72,9 @@ class MainPage extends Component {
              Make your company stand out and show your visitors who you are.</p>
              <span>
                <Link to="./bookonline" tabIndex="-1">
-                 <button className="book-online">book a session ></button>
+                 <button className="book-online"
+                   onClick={ () => toTop()
+                 }>book a session ></button>
                </Link>
              </span>
             </div>
@@ -90,9 +96,11 @@ class MainPage extends Component {
               <div className="row">
               {this.props.images.map((image) => (
                 <div key={image.id} className="column" tabIndex="-1">
-                <Link to='./gallery' tabIndex="-1">
+                  <Link to='./gallery' tabIndex="-1"
+                    onClick={ () => toTop()
+                    }>
                     <div className={image.mainclass} tabIndex="0"></div>
-                </Link>
+                  </Link>
                 </div>
               ))}
               </div>

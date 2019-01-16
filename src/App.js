@@ -224,12 +224,14 @@ class App extends Component {
             <MainPage
               images={ this.state.images }
               sessions={ this.state.sessions }
+              toTop={ this.goToAnchorCero }
             />
           ) }/>
           <Route path='/bookonline' render={()=>(
           <BookOnline
             onBookingSession={ this.bookingSession }
             sessions={ this.state.sessions }
+            toTop={ this.goToAnchorCero }
             />
         ) }/>
           <Route path='/bookingform' render={ ()=>(
