@@ -111,6 +111,7 @@ class BookingForm extends Component {
         </form>
       </div>
       </div>
+      <div className="footer-line"></div>
       </div>
       </div>
     )

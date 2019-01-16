@@ -1243,6 +1243,7 @@ p {
 }
 /*booking form style for desktop devices*/
 form {
+  margin-bottom: 22px;
   width: 100%;
   display: flex;
 }
