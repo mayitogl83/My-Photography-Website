@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-
+function refreshPage(){
+    window.location.reload();
+}
 
 class BookOnline extends Component {
 
@@ -23,6 +25,10 @@ class BookOnline extends Component {
         </div>
         <div className="fade-in three">
         <div className="set-appointment">Book the Session you are looking for Now</div>
+        <div className="show-session">
+          <div className="show-session-item" onClick={ (event) => { refreshPage(); this.goToAnchorCero() }}></div>
+          <div className="show-session-text">Click to Show All Sessions</div>
+        </div>
         <div className="bookonline-field">
           {this.props.sessions.map((session) => (
             <Link key={session.id} to="./bookingform" tabIndex="-1">
