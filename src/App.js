@@ -123,8 +123,27 @@ class App extends Component {
 
   render() {
 
+    /*hide and show to top button when needed*/
+          window.addEventListener("scroll", function (event) {
+            var scroll = this.scrollY;
+            if ( scroll > 736 && scroll < 6099) {
+              document.getElementById("to-top-img").style.height = "60px";
+              document.getElementById("to-top-img").style.width = "60px";
+              document.getElementById("to-top-img").style.backgroundSize = "20px";
+            } else {
+              document.getElementById("to-top-img").style.width = "0px";
+              document.getElementById("to-top-img").style.height = "0px";
+              document.getElementById("to-top-img").style.backgroundSize = "0px";
+            }
+        });
+
     return (
       <div className="App">
+      <div id='to-top-ext' className="to-top-ext">
+        <div id='to-top-img' className="to-top-img"
+          onClick={ () => { this.goToAnchorCero()
+        }}></div>
+      </div>
       <div role="navigation" id="navbar-cell" className="navbar-cell">
         <div className="initial-logo-space"></div>
         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" tabIndex="-1">
