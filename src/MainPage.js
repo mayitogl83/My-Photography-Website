@@ -28,13 +28,12 @@ class MainPage extends Component {
           <div className="pinterest-logo" tabIndex="0">pinterest logo</div>
         </a>
       </div>
-
       <div className="fade-in three">
         <div className="bgimg-1">
-        <div className="logo-container">
-          <div className="camera-logo"></div>
-        </div>
           <div className="caption-top">
+            <div className="logo-container">
+              <div className="camera-logo"></div>
+            </div>
             <span className="title-logo">MARIO'S STUDIO</span>
             <div className="top-line-title"></div>
             <div className="under-title-logo">photography</div>
