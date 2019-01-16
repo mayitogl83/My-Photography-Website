@@ -126,7 +126,7 @@ class App extends Component {
     /*hide and show to top button when needed*/
           window.addEventListener("scroll", function (event) {
             var scroll = this.scrollY;
-            if ( scroll > 736 && scroll < 6099) {
+            if ( scroll > 836 && scroll < 6099) {
               document.getElementById("to-top-img").style.height = "60px";
               document.getElementById("to-top-img").style.width = "60px";
               document.getElementById("to-top-img").style.backgroundSize = "20px";
