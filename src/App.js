@@ -91,6 +91,36 @@ class App extends Component {
 
   }
 
+  goToAnchorCero = () => {
+  setTimeout(function() {
+    window.scrollTo(0, 0);
+  }, 100);
+}
+
+  goToAnchorOne = () => {
+  setTimeout(function() {
+    document.getElementById('about-me').scrollIntoView({
+    behavior: 'smooth'
+    })
+  }, 100);
+}
+
+  goToAnchorTwo = () => {
+  setTimeout(function() {
+    document.getElementById('galeria-section').scrollIntoView({
+    behavior: 'smooth'
+    });
+  }, 100);
+}
+
+  goToAnchorThree = () => {
+  setTimeout(function() {
+    document.getElementById('contact-field').scrollIntoView({
+    behavior: 'smooth'
+    });
+  }, 100);
+}
+
   render() {
 
     return (
@@ -123,36 +153,29 @@ class App extends Component {
         <button onClick={this.w3_close} className="w3-button">X</button>
           <div className="menu-items">
             <Link to='/' tabIndex="-1">
-              <button id="w3-bar-item"
-                className="w3-bar-item"
-                onClick={ (event) => { this.w3_close(); }}
-                >Home</button>
+              <button id="w3-bar-item" className="w3-bar-item"
+                onClick={ (event) => { this.w3_close(); this.goToAnchorCero();
+              }}>Home</button>
             </Link>
             <Link to='' tabIndex="-1">
-              <button id="w3-bar-item"
-                className="w3-bar-item"
-                onClick={ () => window.scrollTo(0, 855) }
-              >About Me</button>
+              <button id="w3-bar-item" className="w3-bar-item"
+                onClick={ (event) => { this.w3_close(); this.goToAnchorOne();
+              }}>About Me</button>
             </Link>
             <Link to='' tabIndex="-1">
-              <button id="w3-bar-item"
-                className="w3-bar-item"
-                onClick={ () => window.scrollTo(0, 2650) }
-              >Galleria</button>
+              <button id="w3-bar-item" className="w3-bar-item"
+                onClick={ (event) => { this.w3_close(); this.goToAnchorTwo();
+              }}>Galleria</button>
+            </Link>
+            <Link to='' tabIndex="-1">
+              <button id="w3-bar-item" className="w3-bar-item"
+                onClick={ (event) => { this.w3_close(); this.goToAnchorThree();
+              }}>Contact Us</button>
             </Link>
             <Link to='./bookonline' tabIndex="-1">
-              <button id="w3-bar-item"
-                className="w3-bar-item"
-                onClick={ (event) => {
-                  this.w3_close();
-                 }}
-              >Book Online</button>
-            </Link>
-            <Link to='' tabIndex="-1">
-              <button id="w3-bar-item"
-                className="w3-bar-item"
-                onClick={ () => window.scrollTo(0, 5320) }
-               >Contact Us</button>
+              <button id="w3-bar-item" className="w3-bar-item"
+                onClick={ (event) => { this.w3_close(); this.goToAnchorCero();
+              }}>Book Online</button>
             </Link>
           </div>
       </div>

@@ -7,18 +7,6 @@ import './App.css';
 class MainPage extends Component {
 
 
-  w3_open = ()=> {
-  document.getElementById("my-sidebar").style.width = "100%";
-  document.getElementById("my-sidebar").style.display = "block";
-  document.getElementById("my-sidebar").style.marginTop = "0px";
-
-  }
-  w3_close = ()=> {
-      document.getElementById("my-sidebar").style.marginTop = "-400px";
-
-  }
-
-
   render() {
 
     return(
@@ -125,7 +113,7 @@ class MainPage extends Component {
           </div>
 
           <div>
-          <div className="contact-field">
+          <div id="contact-field" className="contact-field">
             <div className="msg-field">
             <h3 className="msg-title">Let's Talk</h3>
             <div className="under-line"></div>
