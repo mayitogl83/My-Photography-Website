@@ -182,29 +182,23 @@ class App extends Component {
       <div id="navbar-desktop" className="navbar-desktop">
         <Link to='./' tabIndex="-1">
           <button className="item"
-            onClick={ (event) => { this.w3_close();  window.scrollTo(0, 0);}}
+            onClick={ (event) => { this.w3_close(); this.goToAnchorCero();  }}
             >Home</button>
         </Link>
         <Link to='./' tabIndex="-1">
-          <button className="item"
-            onClick={ () => window.scrollTo(0, 855) }
-          >About Me</button>
+          <button className="item" onClick={ () => this.goToAnchorOne() }>About Me</button>
         </Link>
         <Link to='./' tabIndex="-1">
-          <button className="item"
-            onClick={ () => window.scrollTo(0, 1920) }
-          >Galleria</button>
+          <button className="item" onClick={ () => this.goToAnchorTwo() }>Galleria</button>
         </Link>
         <Link to='./' tabIndex="-1">
-          <button className="item"
-            onClick={ () => window.scrollTo(0, 3164) }
-          >Contact Us</button>
+          <button className="item" onClick={ () => this.goToAnchorThree() }>Contact Us</button>
         </Link>
         <div className="topnav-right">
-          <Link to='./bookonline' tabIndex="-1">
-            <button className="item">Book Online</button>
-          </Link>
-        </div>
+        <Link to='./bookonline' tabIndex="-1">
+          <button className="item" onClick={ (event) => { this.goToAnchorCero(); } }>Book Online</button>
+        </Link>
+      </div>
       </div>
         <div id="page-content" className="content">
           <Route exact path='/' render={()=>(
