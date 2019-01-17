@@ -1,21 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Photography Web Site
+This is a project build using the React framework for Desktops and cellphones, that displays multiple sessions of photography with the info and will allows the users to book the session they looking for receiving a confirmation email and providing a deposit with the appointment
 
-## Available Scripts
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# How to run the application
+1. Download the app in a zip file or clone it using "git clone
+2. Go to the main folder and run "npm install" to install dependencies
+3. Install react-router-dom and react-image-gallery "npm i --save ##"
+4. Go to main folder:
+ - npm start to run the app in developer mode
+ - npm run build to run the app in production mode
 
 ### `npm run build`
 
