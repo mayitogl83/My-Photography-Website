@@ -49,6 +49,7 @@ class Galleria extends Component {
         <div className="fade-in three">
         <ImageGallery items={images} />
         </div>
+        <div className="footer-line"></div>
       </div>
     )
   }
